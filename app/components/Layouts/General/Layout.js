@@ -1,10 +1,8 @@
 import './style.css'
 
-export const loginLayout = () => {
+export const GeneralLayout = () => {
   const template = `
-    <div class='login-layout'>
-
-    </div>
+    <div class='general-layout'></div>
     `
   document.querySelector('#app').innerHTML += template
 }

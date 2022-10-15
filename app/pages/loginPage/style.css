@@ -1,6 +1,6 @@
-.login-layout header {
+.general-layout header {
   justify-content: end;
 }
-.login-layout header .back-btn {
+.general-layout header .back-btn {
   display: none;
 }

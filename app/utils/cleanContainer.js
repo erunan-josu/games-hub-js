@@ -1,3 +1,3 @@
-const cleanContainer = (container) => {
-  container.innerHTML += ''
+export const cleanContainer = (container) => {
+  container.innerHTML = ''
 }

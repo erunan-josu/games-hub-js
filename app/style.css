@@ -12,11 +12,9 @@ body,
 html,
 #app {
   font-family: 'Orbitron', sans-serif;
-  min-height: 100vh;
 }
 
 #app {
-  height: 100vh;
   background: #e64980;
 }
 

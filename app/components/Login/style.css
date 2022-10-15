@@ -1,4 +1,4 @@
-.login-cont {
+.main-cont {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,14 +6,14 @@
   padding: 0rem 2rem;
   color: var(--white);
 }
-.login-cont h1,
-.login-cont h2,
-.login-cont label,
-.login-cont input {
+.main-cont h1,
+.main-cont h2,
+.main-cont label,
+.main-cont input {
   margin-bottom: 1rem;
 }
 
-.login-cont input {
+.main-cont input {
   width: 80%;
   max-width: 350px;
   padding: 0.5rem 1rem;
@@ -21,6 +21,6 @@
   color: var(--white);
 }
 
-.login-cont .login-btn {
+.main-cont .login-btn {
   padding: 0.3rem 2rem;
 }

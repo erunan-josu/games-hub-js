@@ -1,5 +1,5 @@
-.login-layout {
-  height: 100%;
+.general-layout {
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 50px 1fr 50px;
@@ -9,14 +9,14 @@
     'footer footer footer';
 }
 
-.login-layout header {
+.general-layout header {
   grid-area: header;
 }
 
-.login-layout main {
+.general-layout main {
   grid-area: main;
 }
 
-.login-layout footer {
+.general-layout footer {
   grid-area: footer;
 }
