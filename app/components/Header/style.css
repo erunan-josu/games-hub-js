@@ -1,0 +1,10 @@
+header {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header button {
+  padding: 0.1rem 1rem;
+}

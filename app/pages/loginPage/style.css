@@ -1,0 +1,6 @@
+.login-layout header {
+  justify-content: end;
+}
+.login-layout header .back-btn {
+  display: none;
+}
