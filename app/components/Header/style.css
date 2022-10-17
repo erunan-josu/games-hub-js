@@ -8,3 +8,13 @@ header {
 header button {
   padding: 0.1rem 1rem;
 }
+
+.header-no-back {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.invisible {
+  display: none;
+}

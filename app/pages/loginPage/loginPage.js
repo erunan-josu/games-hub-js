@@ -19,8 +19,8 @@ export const loginPage = () => {
   document.querySelector('.general-layout').innerHTML += Login()
   document.querySelector('.general-layout').innerHTML += Footer()
 
-  const backBtn = document.querySelector('.back-btn')
-  backBtn.addEventListener('click', (e) => console.log(e))
+  document.querySelector('header').classList.add('header-no-back')
+  document.querySelector('.back-btn').classList.add('invisible')
 
   const colorBtn = document.querySelector('.color-btn')
   colorBtn.addEventListener('click', setRandomBg)
@@ -38,6 +38,7 @@ export const loginPage = () => {
         localStorage.setItem('user', input.value)
         gamesPage()
       } else {
+        localStorage.setItem('user', input.value)
         gamesPage()
       }
     }

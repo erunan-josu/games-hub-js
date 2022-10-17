@@ -1,69 +1,17 @@
 {
   "users": [
     {
-      "name": "asdf",
-      "id": "8a81bac0-78f0-4e99-b218-26a1199941c2"
+      "name": "josu",
+      "id": "7be5d8ed-6bf2-424e-a58f-1bc7063af6b6"
     },
     {
-      "name": "gh",
-      "id": "74fc17ac-4607-4786-bd2f-1accad6c33fe"
-    },
-    {
-      "name": "fga",
-      "id": "88e9d39b-7c1b-4ed1-b5a4-cd86c3b43e93"
-    },
-    {
-      "name": "adf",
-      "id": "e213c5ee-0954-4bf4-8ce5-accef52b6a01"
-    },
-    {
-      "name": "dsfa",
-      "id": "494a75be-fa90-40e0-98f2-31319111ea76"
-    },
-    {
-      "name": "fads",
-      "id": "353f829c-e789-4749-b083-46bb87755eda"
-    },
-    {
-      "name": "adfsf",
-      "id": "217be6a9-1cbd-4b4d-9cb5-a804bd5cabe6"
-    },
-    {
-      "name": "adsf",
-      "id": "3fb28ae3-65ac-4050-8f6a-bf78b694517e"
-    },
-    {
-      "name": "ads",
-      "id": "de18e3db-b1bd-40b7-8a0f-afcf1a37cb3a"
-    },
-    {
-      "name": "adfas",
-      "id": "78aa654e-312f-453d-98e2-c05006a6a94c"
-    },
-    {
-      "name": "fadsf",
-      "id": "9a5eb969-b29b-43e1-aaca-39d8849f6c5e"
-    },
-    {
-      "name": "df",
-      "id": "bc378344-c750-46bf-94f5-56a95405d30f"
-    },
-    {
-      "name": "fdsaf",
-      "id": "3b7f4f49-98af-4529-845a-3c51408baeae"
-    },
-    {
-      "name": "daf",
-      "id": "991bf6fd-1669-4a22-9417-3a40ecf2c7d1"
+      "name": "andobo",
+      "id": "199b7453-7e6e-4b1f-ad4c-d68d560377b9"
     }
   ],
   "games": [
     {
-      "name": "Quizz",
-      "url": "https://res.cloudinary.com/dieasyxbw/image/upload/v1665853459/games-hub/ttt_ga2uyn.png"
-    },
-    {
-      "name": "Pokedex",
+      "name": "TicTacToe",
       "url": "https://res.cloudinary.com/dieasyxbw/image/upload/v1665853459/games-hub/ttt_ga2uyn.png"
     },
     {

@@ -1,3 +1,7 @@
 .main-cont {
   padding: 3rem 2rem;
 }
+
+.main-cont .greeting {
+  padding: 1rem;
+}

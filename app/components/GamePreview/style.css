@@ -13,7 +13,7 @@
   margin: 1rem 0;
 }
 
-.game-preview figcaption {
+.game-preview .game-init-btn {
   width: 100%;
   padding: 1rem;
   background: #333;
