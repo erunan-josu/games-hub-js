@@ -22,5 +22,67 @@
       "name": "Pokedex",
       "url": "https://res.cloudinary.com/dieasyxbw/image/upload/v1665853459/games-hub/ttt_ga2uyn.png"
     }
+  ],
+  "quizz": [
+    {
+      "id": "q1",
+      "question": "It is a fire type Pokemon that evolves from Charmeleon. Can you name this Pokemon?",
+      "answers": ["Magikarp", "Muk", "Butterfree", "Charizard"],
+      "correct": "Charizard"
+    },
+    {
+      "id": "q2",
+      "question": "It evolves from Haunter and it is purple with red eyes. Can you name this Pokemon?",
+      "answers": ["Persian", "Gengar", "Squirtle", "Horsea"],
+      "correct": "Gengar"
+    },
+    {
+      "id": "q3",
+      "question": "It is a ground type Pokemon that wears a skull and carries a bone. Can you name this Pokemon?",
+      "answers": ["Cubone", "Chansey", "Gyarados", "Jynx"],
+      "correct": "Cubone"
+    },
+    {
+      "id": "q4",
+      "question": "It is a water type Pokemon that resembles seahorse, and evolves into Kingdra. Can you name this Pokemon?",
+      "answers": ["Vulpix", "Beedrill", "Jigglypuff", "Seadra"],
+      "correct": "Seadra"
+    },
+    {
+      "id": "q5",
+      "question": "It is a water type Pokemon that is the final evolution of a starter from the Red/Blue games. Can you name this Pokemon?",
+      "answers": ["Tangela", "Charmander", "Blastoise", "Mewtwo"],
+      "correct": "Blastoise"
+    },
+    {
+      "id": "q6",
+      "question": "It is a legendary Pokemon that was an attempt at cloning another Pokemon. Can you name this Pokemon?",
+      "answers": ["Hitmonlee", "Jigglypuff", "Oddish", "Mewtwo"],
+      "correct": "Mewtwo"
+    },
+    {
+      "id": "q7",
+      "question": "It looks like a Poke Ball and it can explode. Can you name this Pokemon?",
+      "answers": ["Cubone", "Hitmonlee", "Voltorb", "Gastly"],
+      "correct": "Voltorb"
+    },
+    {
+      "id": "q8",
+      "question": "It evolves from Bulbasaur and it has leaves on it's back. Can you name this Pokemon?",
+      "answers": ["Eevee", "Ivysaur", "Zubat", "Seel"],
+      "correct": "Ivysaur"
+    },
+    {
+      "id": "q9",
+      "question": "It is a water-type Pokemon that resembles a star and Misty had this Pokemon in the anime. Can you name this Pokemon?",
+      "answers": ["Staryu", "Caterpie", "Krabby", "Geodude"],
+      "correct": "Staryu"
+    },
+    {
+      "id": "q10",
+      "question": "It is a normal type Pokemon that carries a baby in its pouch. Can you name this Pokemon?",
+      "answers": ["Kangaskhan", "Charmeleon", "Pidgey", "Wurmple"],
+      "correct": "Kangaskhan"
+    }
   ]
 }

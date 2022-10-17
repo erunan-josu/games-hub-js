@@ -8,12 +8,12 @@
 }
 .main-cont h1,
 .main-cont h2,
-.main-cont label,
-.main-cont input {
+.main-cont .login-label,
+.main-cont #user-input {
   margin-bottom: 1rem;
 }
 
-.main-cont input {
+.main-cont #user-input {
   width: 80%;
   max-width: 350px;
   padding: 0.5rem 1rem;

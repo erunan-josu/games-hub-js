@@ -1,0 +1,9 @@
+.quizz-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.quizz-menu .next-btn {
+  padding: 0.3rem 2rem;
+}

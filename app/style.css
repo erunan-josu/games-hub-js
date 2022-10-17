@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 :root {
   --white: #f6f6f6;
+  --yellow: #f5cf56;
+  --red: #cc2027;
 }
 * {
   padding: 0;
@@ -15,35 +17,14 @@ html,
 }
 
 #app {
-  background: #e64980;
+  background: var(--yellow);
+}
+
+li {
+  list-style: none;
 }
 
 input {
   outline: none;
   border: var(--white);
 }
-/* 
-body {
-  color: var(--white);
-  background: #e64980;
-}
-
-input:focus {
-  outline: none;
-}
-
-#header {
-  height: 50px;
-  padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  margin-bottom: 10rem;
-}
-
-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
- */

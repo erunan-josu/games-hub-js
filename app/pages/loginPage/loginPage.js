@@ -1,4 +1,3 @@
-import './style.css'
 import { getData } from '../../services/getData'
 import { Header } from '../../components/Header/Header'
 import { Login } from '../../components/Login/Login'
