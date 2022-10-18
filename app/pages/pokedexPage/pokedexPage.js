@@ -27,19 +27,36 @@ export const runPokedex = async () => {
 const search = (arr) => {
   let pokemons = [...arr]
   const searchBtn = document.querySelector('.pkmn-search-input')
-  console.log(searchBtn)
+
   searchBtn.addEventListener('input', () => {
     const newPokemons = arr.filter((pokemon) => {
       const { name } = pokemon
       return name.includes(searchBtn.value)
     })
     pokemons = newPokemons
+
     const cardsContainer = document.querySelector('.pkdx-cards-container')
     cleanContainer(cardsContainer)
     newPokemons.length > 0
       ? showPokemons(pokemons)
       : show404(cardsContainer, 'Uppss!! Pokemon not found')
-    console.log(newPokemons)
+  })
+
+  searchByType(pokemons)
+}
+
+const searchByType = (arr) => {
+  const select = document.querySelector('.type-select')
+  select.addEventListener('change', (e) => {
+    const newPokemons = arr.filter((pokemon) => {
+      const { types } = pokemon
+      return types[0].type.name === select.value
+    })
+    const cardsContainer = document.querySelector('.pkdx-cards-container')
+    cleanContainer(cardsContainer)
+    newPokemons.length > 0
+      ? showPokemons(newPokemons)
+      : show404(cardsContainer, 'Uppss!! Pokemon not found')
   })
 }
 
