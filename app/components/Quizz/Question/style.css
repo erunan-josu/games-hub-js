@@ -1,6 +1,25 @@
-.answers-list {
+.quizz-container {
+  height: 100%;
+  width: 100%;
+  padding: 4rem;
+}
+
+.quizz-container h2 {
+  margin-bottom: 4rem;
+}
+
+.quizz-container .answers-list {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 3rem 0rem;
+  margin-bottom: 4rem;
+}
+
+.quizz-container .menu-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quizz-container .menu-container button {
+  padding: 0.5rem 2rem;
 }

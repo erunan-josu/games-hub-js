@@ -25,7 +25,7 @@ export const loginPage = () => {
   colorBtn.addEventListener('click', setRandomBg)
 
   const loginBtn = document.querySelector('.login-btn')
-  loginBtn.addEventListener('click', async (e) => {
+  loginBtn.addEventListener('click', async () => {
     const input = document.querySelector('#user-input')
     if (input.value.length <= 0) {
       alert('Your name must have at least 1 character')

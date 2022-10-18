@@ -1,6 +1,7 @@
-import './style.css'
-export const Answer = (item) => `
-        <li class='quizz-answer'>
-            <input name='quizz-answer' id='${item}' type='radio' value='${item}' > <label for='${item}'>${item}</label>
-        </li>
-        `
+export const Answer = (name) => {
+  return `
+  <li class='quizz-answer'>
+    <input type='radio' id='${name}' name='answer' class='quizz-input' value='${name}'>
+    <label for='${name}'>${name}</label>
+  </li>`
+}

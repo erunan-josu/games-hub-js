@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0rem 2rem;
   color: var(--white);
 }
 .main-cont h1,
