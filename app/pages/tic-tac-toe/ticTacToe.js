@@ -2,6 +2,8 @@ import './style.css'
 import { Button } from '../../components/Button/Button'
 import { cleanContainer } from '../../utils/cleanContainer'
 import { getRandomNum } from '../../utils/getRandomNum'
+import pikachu from '../../public/images/pika.png'
+import pokeball from '../../public/images/pokeball.png'
 
 const winCondition = [
   [0, 1, 2],
@@ -41,7 +43,7 @@ export const runTicTacToe = () => {
   const cells = document.querySelectorAll('.cell')
   cells.forEach((cell) => {
     cell.addEventListener('click', (e) => {
-      // check if already has x or o
+      console.log(e.target)
       if (
         e.target.classList.contains('x-cell') ||
         e.target.classList.contains('o-cell')
@@ -49,7 +51,7 @@ export const runTicTacToe = () => {
         return
 
       // Print x
-      cell.innerHTML += 'x'
+      cell.innerHTML += `<img class='x-img x-cell' src='${pikachu}'>`
       cell.classList.add('x-cell')
 
       // check if all cells has x or o
@@ -78,7 +80,7 @@ const iaTurn = () => {
   if (checkFinish(cells)) return
   const randomCell = getRandomCell(cells)
   if (randomCell) {
-    randomCell.innerHTML = 'o'
+    randomCell.innerHTML += `<img class='x-img x-cell' src='${pokeball}'>`
     randomCell.classList.add('o-cell')
   }
   if (checkWin(cells, 'o-cell')) {
