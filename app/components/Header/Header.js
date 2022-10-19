@@ -4,7 +4,7 @@ export const Header = () => {
   return `
         <header>
           ${Button('🔙', 'back-btn')}
-          ${Button('color-mode', 'color-btn')}
+          ${Button('🎨 random color', 'color-btn')}
         </header>
 `
 }

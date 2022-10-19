@@ -34,7 +34,6 @@ export const Question = ({ question, answers, correct }, index, total, arr) => {
 
   const checkAnswer = () => {
     const checked = document.querySelector('input[type="radio"]:checked').value
-    console.log(checked)
     return checked === correct ? true : false
   }
 
@@ -53,13 +52,16 @@ export const Question = ({ question, answers, correct }, index, total, arr) => {
       document.querySelector('.next-btn').addEventListener('click', () => {
         if (checkChecked().length <= 0) return
         checkAnswer() && correctAnswers++
-        console.log(correctAnswers)
         Question(arr[index], index, arr.length, arr)
       })
     }
   }
 
   createButton(index + 1, total, arr)
+}
+
+export const resetScore = () => {
+  correctAnswers = 0
 }
 
 const updatePage = (current, total) => {

@@ -9,5 +9,5 @@ export const runQuizz = async () => {
   const index = 0
   const length = quizzData.length
 
-  Question(quizzData[0], index, length, quizzData)
+  Question(quizzData[index], index, length, quizzData)
 }
