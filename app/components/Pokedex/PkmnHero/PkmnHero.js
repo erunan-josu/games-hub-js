@@ -1,3 +1,5 @@
 import './style.css'
 
-export const PkmnHero = () => {}
+export const PkmnHero = (i) => {
+  console.log('hero!')
+}

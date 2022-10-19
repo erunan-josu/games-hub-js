@@ -5,7 +5,6 @@ export const PkmnSearchbar = (pokemons) => {
       <input class='pkmn-search-input' placeholder='Search Pokemon'>
       <select name='pokemon-type' class='type-select'></select>
     `
-  console.log(document.querySelector('.pkdx-searchbar-container'))
   document.querySelector('.pkdx-searchbar-container').innerHTML += searchbar
 
   const types = getTypes(pokemons)

@@ -12,7 +12,9 @@
 
 body,
 html,
-#app {
+#app,
+input,
+select {
   font-family: 'Orbitron', sans-serif;
 }
 

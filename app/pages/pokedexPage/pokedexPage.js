@@ -18,46 +18,56 @@ export const runPokedex = async () => {
   </section>
   `
   PkmnSearchbar(pokemonsData)
-
   showPokemons(pokemonsData)
-
-  search(pokemonsData)
+  events(pokemonsData)
 }
 
-const search = (arr) => {
-  let pokemons = [...arr]
-  const searchBtn = document.querySelector('.pkmn-search-input')
+const events = (arr) => {
+  const searchInpt = document.querySelector('.pkmn-search-input')
+  const selectType = document.querySelector('.type-select')
+  const cardsContainer = document.querySelector('.pkdx-cards-container')
+  let filteredArr = []
 
-  searchBtn.addEventListener('input', () => {
-    const newPokemons = arr.filter((pokemon) => {
-      const { name } = pokemon
-      return name.includes(searchBtn.value)
-    })
-    pokemons = newPokemons
+  const search = () => {
+    if (selectType.value === 'all') {
+      filteredArr = arr.filter((pokemon) => {
+        const { name } = pokemon
+        return name.includes(searchInpt.value)
+      })
 
-    const cardsContainer = document.querySelector('.pkdx-cards-container')
-    cleanContainer(cardsContainer)
-    newPokemons.length > 0
-      ? showPokemons(pokemons)
-      : show404(cardsContainer, 'Uppss!! Pokemon not found')
-  })
+      cleanContainer(cardsContainer)
+      renderResult(filteredArr, 'Upps! Pokemon not found.', cardsContainer)
+    } else {
+      filteredArr = filterByName(arr, searchInpt.value)
+      filteredArr = filterByType(filteredArr, selectType.value)
 
-  searchByType(pokemons)
+      cleanContainer(cardsContainer)
+      renderResult(filteredArr, 'Upps! Pokemon not found.', cardsContainer)
+    }
+  }
+
+  searchInpt.addEventListener('input', search)
+
+  selectType.addEventListener('change', search)
 }
 
-const searchByType = (arr) => {
-  const select = document.querySelector('.type-select')
-  select.addEventListener('change', (e) => {
-    const newPokemons = arr.filter((pokemon) => {
-      const { types } = pokemon
-      return types[0].type.name === select.value
-    })
-    const cardsContainer = document.querySelector('.pkdx-cards-container')
-    cleanContainer(cardsContainer)
-    newPokemons.length > 0
-      ? showPokemons(newPokemons)
-      : show404(cardsContainer, 'Uppss!! Pokemon not found')
+const filterByName = (arr, value) => {
+  return arr.filter((pokemon) => {
+    const { name } = pokemon
+    return name.includes(value)
   })
+}
+
+const filterByType = (arr, value) => {
+  return arr.filter((pokemon) => {
+    const { types } = pokemon
+    const pkmnTypes = types.map((type) => type.type.name)
+    return pkmnTypes.includes(value)
+  })
+}
+
+const renderResult = (arr, text, element) => {
+  arr.length > 0 ? showPokemons(arr) : show404(element, text)
 }
 
 export const showPokemons = (arr) => {
