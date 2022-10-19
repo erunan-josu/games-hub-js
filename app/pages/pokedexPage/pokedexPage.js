@@ -3,6 +3,7 @@ import { PkmnCard } from '../../components/Pokedex/PkmnCard/PkmnCard'
 import { getPokemons } from '../../services/pokemon/getPokemons'
 import { cleanContainer } from '../../utils/cleanContainer'
 import { PkmnSearchbar } from '../../components/Pokedex/PkmnSearchbar/PkmnSearchbar'
+import { PkmnHero } from '../../components/Pokedex/PkmnHero/PkmnHero'
 
 export const runPokedex = async () => {
   const mainContainer = document.querySelector('.main-cont')
@@ -18,8 +19,10 @@ export const runPokedex = async () => {
   </section>
   `
   PkmnSearchbar(pokemonsData)
+  PkmnHero(pokemonsData[2])
   showPokemons(pokemonsData)
   events(pokemonsData)
+  cardEvent(pokemonsData)
 }
 
 const events = (arr) => {
@@ -37,17 +40,18 @@ const events = (arr) => {
 
       cleanContainer(cardsContainer)
       renderResult(filteredArr, 'Upps! Pokemon not found.', cardsContainer)
+      cardEvent(arr)
     } else {
       filteredArr = filterByName(arr, searchInpt.value)
       filteredArr = filterByType(filteredArr, selectType.value)
 
       cleanContainer(cardsContainer)
       renderResult(filteredArr, 'Upps! Pokemon not found.', cardsContainer)
+      cardEvent(arr)
     }
   }
 
   searchInpt.addEventListener('input', search)
-
   selectType.addEventListener('change', search)
 }
 
@@ -76,4 +80,18 @@ export const showPokemons = (arr) => {
 
 const show404 = (element, text) => {
   element.innerHTML += `<p>${text}</p>`
+}
+
+const cardEvent = (arr) => {
+  console.log('dentro')
+  const heroContainer = document.querySelector('.pkdx-hero-container')
+  const cardsNode = document.querySelectorAll('.pkmn-card')
+
+  cardsNode.forEach((card) => {
+    card.addEventListener('click', () => {
+      const cardId = card.dataset.num
+      cleanContainer(heroContainer)
+      PkmnHero(arr[cardId - 1])
+    })
+  })
 }

@@ -11,3 +11,9 @@
   border: none;
   letter-spacing: 1px;
 }
+
+@media screen and (max-width: 495px) {
+  .type-select {
+    padding: 0.5rem 0;
+  }
+}

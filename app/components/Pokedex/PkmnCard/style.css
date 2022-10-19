@@ -45,3 +45,9 @@
 .pkmn-card .pkmn-card-img {
   height: 100%;
 }
+
+@media screen and (max-width: 495px) {
+  .pkmn-card {
+    width: 80%;
+  }
+}

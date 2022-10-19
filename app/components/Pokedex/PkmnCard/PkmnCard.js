@@ -22,18 +22,18 @@ const typeColors = {
 }
 
 export const PkmnCard = (pokemon) => {
-  const { types } = pokemon
+  const { types, id, sprites, name } = pokemon
   const firstType = types[0].type.name
 
   const pokemonCard = `
-    <figure class='pkmn-card' style="background: ${typeColors[firstType]}">
+    <figure data-num='${id}' class='pkmn-card' style="background: ${typeColors[firstType]}">
         <div class='pkmn-num-container'>
-            <p class='pkmn-card-num'># ${pokemon.id}</p>
+            <p class='pkmn-card-num'># ${id}</p>
         </div>
         <div class='pkmn-img-container'>
-            <img class='pkmn-card-img' src='${pokemon.sprites.common}' alt='${pokemon.name}'>
+            <img class='pkmn-card-img' src='${sprites.common}' alt='${name}'>
         </div>
-        <figcaption class='pkmn-card-name'>${pokemon.name}</figcaption>
+        <figcaption class='pkmn-card-name'>${name}</figcaption>
     </figure>
     `
   document.querySelector('.pkdx-cards-container').innerHTML += pokemonCard
